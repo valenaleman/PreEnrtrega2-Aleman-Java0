@@ -118,6 +118,10 @@ function saludarAUnCliente(nombreCliente) {
 let nombrethree;
 nombrethree = prompt('Ingrese su nombre');
 
+let Cliente;
+
+Cliente = 'Hola';
+
 saludarAUnCliente(Cliente);
 
 console.log('Hago otras cosas...')
@@ -216,13 +220,14 @@ usarLaFuncion(function() {
 
 // Otra expresión de función - Arrow function
 
-const saludar = () => {alert('Hola, ¿cómo va?')};
+const saludartres = () => {alert('Hola, ¿cómo va?')};
 
 saludar();
 
 // Scoping
 
 let variableGlobal = 6000;
+let variableLocal = 4;
 
 function mostrarDato() {
     // Ambito de la función
@@ -347,7 +352,7 @@ mostrarAtributo('nombre', persona1);
 // Recorrido de atributos
 // Uso de FOR... IN
 
-const persona1 = {nombre: 'Maria', apellido: 'Gonzales', producto: 'Pañales', mail: 'mariagonzales00@gmail.com'}
+const persona = {nombre: 'Maria', apellido: 'Gonzales', producto: 'Pañales', mail: 'mariagonzales00@gmail.com'}
 
 // Por cada atributo que hay en el objeto persona1...
 
@@ -362,3 +367,48 @@ if ('peso' in persona1) {
 }else {
     console.log('El atributo peso no esta en persona1');
 }
+
+// Constructores
+// Constructor de productos
+
+function Producto(nom, precio, marca) {
+    this.nombre = nom;
+    this.precio = precio;
+    this.marca = marca;
+}
+
+let nombreP = 'Pañal para bebés (60 pañales, para peso: 8,5 - 12 kg)';
+let precio = 3200;
+let marca = 'Babysec - Ultrasec';
+
+const producto1 = new Producto(nombreP, precio, marca);
+
+let nombrePtwo = 'Pañal para bebés (58 pañales, talle: XG, para peso: 11 - 15 kg)';
+let preciotwo = 5900;
+let marcatwo = 'Pampers - Premium care';
+
+const producto2 = new Producto(nombrePtwo, preciotwo, marcatwo);
+
+let nombrePthree = 'Pañal para bebés (36 pañales, para peso: 5 - 8 kg)';
+let preciothree = 2420;
+let marcathrree = 'Pampers - Premium care';
+
+const producto3 = new Producto(nombrePthree, preciothree, marcathrree);
+
+let nombrePfour = 'Pañal para bebés (20 pañales, para peso: 6 kg)';
+let preciofour = 3200;
+let marcafour = 'Pampers - Premium care';
+
+const producto4 = new Producto(nombrePfour, preciofour, marcafour);
+
+let nombrePfive = 'Pañal para bebés (27 unidades, talle: 6)';
+let preciofive = 7600;
+let marcafive = 'Chelino';
+
+const producto5 = new Producto(nombrePfive, preciofive, marcafive);
+
+let nombrePsix = 'Pañal para bebés (50 unidades, medidas: 200 x150 mm)';
+let preciosix = 690;
+let marcasix = 'Q-SOFT Premium';
+
+const producto6 = new Producto(nombrePsix, preciosix, marcasix);
