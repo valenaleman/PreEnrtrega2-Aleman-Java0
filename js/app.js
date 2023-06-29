@@ -192,6 +192,30 @@ function calculadora(num1, num2, operacion) {
     }
 }
 
+// Expresión de función - función anonima
+
+function saludar() {
+    alert('Hola, ¿cómo va?')
+}
+
+// En forma de expreción de función
+
+const saludar = function () {
+    alert('Hola, ¿cómo va?');
+}
+
+saludar();
+
+function usarLaFuncion(unaFuncion) {
+    unaFuncion();
+}
+
+usarLaFuncion(function() {
+    alert('Hola, ¿cómo va?');
+})
+
+
+
 // Nos planteamos una calculadora
 /*
  1- + sumar
