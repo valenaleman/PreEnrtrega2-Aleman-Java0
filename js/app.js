@@ -156,7 +156,7 @@ if (Number(x) && Number(y)) {
 let total;
 
 
-function agregarItemCarrito(totalCarrito, precio, cantidad); {
+function agregarItemCarrito(totalCarrito, precio, cantidad) {
     return totalCarrito + precio*cantidad;
 }
 
@@ -200,7 +200,7 @@ function saludar() {
 
 // En forma de expreción de función
 
-const saludar = function () {
+const saludardos = function () {
     alert('Hola, ¿cómo va?');
 }
 
@@ -322,3 +322,43 @@ console.log('El mail de' + persona1.nombre + 'es' + persona1.mail);
 
 console.log(persona1.peso);
 
+// Modifico el contenido del atributo del objeto
+
+persona1.nombre = 'Claudia';
+
+console.log(persona1);
+
+// Otra forma de acceder a los atributos del objeto
+
+let atributo = 'nombre';
+console.log(persona1[atributo]);
+
+console.log(persona1['edad']);
+
+persona1['edad'] = 80;
+
+function mostrarAtributo (nombreAtributo, objetodos) {
+    console.log(objetodos[nombreAtributo]);
+}
+
+mostrarAtributo('mail', persona1);
+mostrarAtributo('nombre', persona1);
+
+// Recorrido de atributos
+// Uso de FOR... IN
+
+const persona1 = {nombre: 'Maria', apellido: 'Gonzales', producto: 'Pañales', mail: 'mariagonzales00@gmail.com'}
+
+// Por cada atributo que hay en el objeto persona1...
+
+for (const atributo in persona1) {
+    console.log(atributo + ': ' + persona1[atributo]);
+}
+
+// El operador IN nos devolvera verdadero si esta el atributo en el objeto, si no falso
+
+if ('peso' in persona1) {
+    console.log('El atributo peso esta en personal');
+}else {
+    console.log('El atributo peso no esta en persona1');
+}
