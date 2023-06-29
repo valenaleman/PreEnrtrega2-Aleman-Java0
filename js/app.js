@@ -134,8 +134,20 @@ suma(5000,600);
 
 suma('Hola','cliente');
 
-//
+let x;
+let y;
 
+
+x = 80;
+y = 25;
+
+// Validación de datos para no enviar cualquier valor por parametro
+
+if (Number(x) && Number(y)) {
+    suma(x,y);
+}else {
+    console.log('Parametros invalidos!');
+}
 
 // Nos planteamos una calculadora
 /*
