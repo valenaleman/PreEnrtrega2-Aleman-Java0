@@ -177,6 +177,21 @@ total = agregarItemCarrito(total, 3000, 6000);
 mostrarTotalCarrito(total);
 total = vaciarCarrito();
 
+
+// Función con error 
+
+function calculadora(num1, num2, operacion) {
+    switch(operacion) {
+        case '+' :
+                 return num1 + num2;
+                 console.log('Hola');
+                 break;
+        case '-' :
+                 return num1 - num2;
+                 break;
+    }
+}
+
 // Nos planteamos una calculadora
 /*
  1- + sumar
