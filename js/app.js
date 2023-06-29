@@ -308,6 +308,17 @@ producto = 'Pañales'
 mail = 'mariagonzales00@gmail.com'
 
 // Forma literal de declaración de objetos 
+
 const persona1 = {nombre: 'Maria', apellido: 'Gonzales', producto: 'Pañales', mail: 'mariagonzales00@gmail.com'}
 
 console.log(persona1); 
+
+// Accedo a los atributos
+
+console.log(persona1.mail);
+console.log('El mail de' + persona1.nombre + 'es' + persona1.mail);
+
+// Si no existe me devolvera undefined
+
+console.log(persona1.peso);
+
