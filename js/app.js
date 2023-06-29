@@ -412,3 +412,39 @@ let preciosix = 690;
 let marcasix = 'Q-SOFT Premium';
 
 const producto6 = new Producto(nombrePsix, preciosix, marcasix);
+
+// Creo arrays
+
+const arrayVacio = []; // Un array vacio
+
+const arrayConElementos = ['Babysec', 'Pampers', 'Chelino', 'Q-SOFT'];
+
+console.log(arrayVacio);
+console.log(arrayConElementos);
+
+// Accedo a un elemento de mi array
+
+console.log(arrayConElementos[2]);
+console.log(arrayConElementos[3]);
+console.log(arrayConElementos[4]);
+
+
+arrayConElementos[2] = 'Babysec';
+
+console.log(arrayConElementos);
+
+// Atributos 
+// Length
+
+console.log('cantidad de elementos:' + arrayConElementos.length);
+
+const miLista = ['Babysec', 'Pampers', 'Chelino', 'Q-SOFT'];
+
+console.log(miLista[0]);
+console.log(miLista[1]);
+console.log(miLista[2]);
+console.log(miLista[3]);
+
+for (let i = 0; i <= miLista.length; i++) {
+    console.log(miLista[0]);
+}
