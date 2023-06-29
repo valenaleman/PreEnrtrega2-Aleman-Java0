@@ -220,6 +220,33 @@ const saludar = () => {alert('Hola, ¿cómo va?')};
 
 saludar();
 
+// Scoping
+
+let variableGlobal = 6000;
+
+function mostrarDato() {
+    // Ambito de la función
+
+    let variableLocal = 4; // Local a la función
+    console.log(variableGlobal);
+    console.log('Variable global dentro de mostrarDatos' + variableGlobal);
+}
+
+mostrarDato();
+// Contexto global
+console.log('Variable global:' + variableGlobal);
+console.log('Variable local a mostrarDato:' + variableLocal);
+
+let numero = 5;
+
+function imprimirNumero() {
+    numero = 3;
+    console.log(numero); // 3
+}
+
+imprimirNumero();
+console.log(numero); // 5
+
 // Nos planteamos una calculadora
 /*
  1- + sumar
