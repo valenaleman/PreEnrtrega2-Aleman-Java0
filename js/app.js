@@ -149,6 +149,34 @@ if (Number(x) && Number(y)) {
     console.log('Parametros invalidos!');
 }
 
+// Retorno de un valor
+
+// Ejemplo agregando a un carrito de compras un elemento
+
+let total;
+
+
+function agregarItemCarrito(totalCarrito, precio, cantidad); {
+    return totalCarrito + precio*cantidad;
+}
+
+function mostrarTotalCarrito(totalCarrito) {
+    console.log('Total con el nuevo item añadido' + total);
+}
+
+function vaciarCarrito() {
+    console.log('Vaciamos los items del carrito');
+    return 0;
+}
+
+console.log('total del carrito:' + total);
+
+total = agregarItemCarrito(total, 5000, 600);
+mostrarTotalCarrito(total);
+total = agregarItemCarrito(total, 3000, 6000);
+mostrarTotalCarrito(total);
+total = vaciarCarrito();
+
 // Nos planteamos una calculadora
 /*
  1- + sumar
