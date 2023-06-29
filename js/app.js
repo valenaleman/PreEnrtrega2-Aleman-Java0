@@ -240,12 +240,12 @@ console.log('Variable local a mostrarDato:' + variableLocal);
 let numero = 5;
 
 function imprimirNumero() {
-    numero = 3;
+    let numero = 3;
     console.log(numero); // 3
 }
 
 imprimirNumero();
-console.log(numero); // 5
+console.log(numero); // 3
 
 // Nos planteamos una calculadora
 /*
