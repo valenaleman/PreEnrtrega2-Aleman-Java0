@@ -214,7 +214,11 @@ usarLaFuncion(function() {
     alert('Hola, ¿cómo va?');
 })
 
+// Otra expresión de función - Arrow function
 
+const saludar = () => {alert('Hola, ¿cómo va?')};
+
+saludar();
 
 // Nos planteamos una calculadora
 /*
