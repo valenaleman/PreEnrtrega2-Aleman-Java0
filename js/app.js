@@ -448,3 +448,36 @@ console.log(miLista[3]);
 for (let i = 0; i <= miLista.length; i++) {
     console.log(miLista[0]);
 }
+
+// Retornar funciones
+
+function Pañalera(tienda) {
+    return function(nombreLocal) {
+        console.log(`${nombreLocal} ahora puede ${tienda}`)
+    }
+}
+
+function Pañalera(tienda) {
+    switch(tienda) {
+        case 'tienda':
+            return function(nombrep) {
+                console.log(`${nombrep} El nombre de la tienda es La placita`);
+            }
+        case '2020':
+            return function(nombrep) {
+                console.log(`${nombrep} El año que se creo La placita fue en el 2020`);
+            }
+        default:
+            return function(nombrep) {
+                console.log(`${nombrep} El nombre de la tienda es La placita, esta tienda se creo en el 2020 ${tienda}`);
+            }
+    }
+}
+
+const elNombreDeLaTienda = Pañalera('tienda');
+elNombreDeLaTienda('La placita');
+
+const elAñoQueSeCreoLaTienda = Pañalera('2020');
+
+elAñoQueSeCreoLaTienda('FechaDeCreaciónDeLaPañalera');
+
