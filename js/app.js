@@ -481,3 +481,25 @@ const elAñoQueSeCreoLaTienda = Pañalera('2020');
 
 elAñoQueSeCreoLaTienda('FechaDeCreaciónDeLaPañalera');
 
+// Elementos del DOM
+
+// Elemento principal
+
+console.log(document);
+
+// Elementos secundarios
+
+console.log(document.body);
+console.log(document.head);
+
+// Propiedades del documento
+
+console.log(document.URL);
+console.log(document.contentType);
+console.log(document.scripts);
+console.log(document.links) // Muestra los href
+
+// Acceder a los elementos del DOM
+
+const oneclass = document.getElementsByClassName('pañaleraicon');
+console.log(oneclass);
