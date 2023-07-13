@@ -83,3 +83,10 @@ h6 {
 .p2 { 
     margin: $twoMargin;
 }
+
+@media screen and (max-width: 320px) {
+    .pañaleraicon {
+        width: 80px;
+        height: 80px;
+     }
+}
