@@ -13,21 +13,17 @@ $oneColor: lightblue;
 $secondColor: gray;
 $threeColor: lightgreen;
 
-// position
-$padding: 20px;
-$margin: 0 auto;
-$width: 100%;
-$center: center;
-$right: right;
-$twoMargin: 200px;
+// size
+$onepx: 80px;
 
 // position
 $padding: 20px;
 $margin: 0 auto;
-$width: 50%;
-$twoWidth: 100%;
+$center: center;
 $right: right;
 $twoMargin: 200px;
+$width: 50%;
+$twoWidth: 100%;
 
 h2 {
     font-family: $font-family;
@@ -86,7 +82,7 @@ h6 {
 
 @media screen and (max-width: 320px) {
     .pañaleraicon {
-        width: 80px;
-        height: 80px;
+        width: $onepx;
+        height: $onepx;
      }
 }
