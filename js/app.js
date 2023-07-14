@@ -503,3 +503,40 @@ console.log(document.links) // Muestra los href
 
 const oneclass = document.getElementsByClassName('pañaleraicon');
 console.log(oneclass);
+
+// Storage
+
+// LOCALSTORAGE
+
+let miNombre = 'Valentina';
+
+// Guardamos un elemento en el localStorage
+
+localStorage.setItem('nombre', miNombre);
+
+// Obtenemos ese elemento del localStorage
+
+const elNombreObtenido =  localStorage.getItem('nombre');
+
+console.log(nombreObtenido);
+
+// Session storage
+
+let unaClave = 2020;
+
+sessionStorage.setItem('clave', unaClave);
+
+for (let i = 0; i < localStorage.length ; i++);
+{
+    let clave = localStorage.key(i);
+    let elemento = localStorage.getItem(clave);
+    console.log(`${clave} : ${elemento}`);
+}
+
+// Remuevo un item
+
+localStorage.removeItem('otraclave');
+
+// Remover todos los elementos del session/localstorage
+
+//localStorage.clear();
